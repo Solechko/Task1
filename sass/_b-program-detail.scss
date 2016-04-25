@@ -1,0 +1,47 @@
+.b-program-detail {
+	width: 280px;	
+	background: $gray-color-dark;
+	color: $main-color-light;		
+}
+
+.b-program-detail__icon {
+	width: 100%;	
+	display: block;
+}
+
+.b-program-detail__content {
+	padding: 20px;
+}
+
+.b-program-detail__title {	
+	font-size: $large-font-size;
+	letter-spacing: 0.5px;
+}
+
+.b-program-detail__category, 
+.b-program-detail__age {
+	margin: 10px 0;	
+	color: $main-color;	
+	font-weight: bold;	
+	font-size: 15px;
+	display: inline-block;
+}
+
+.b-program-detail__description {
+	font-size: $base-font-size;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+
+.b-program-detail__link {
+	color: $main-color;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: right;
+	display: block;
+	font-size: 15px;	
+}
+
+.b-program-detail__link:hover {
+    color: $main-color-hilight; 
+}

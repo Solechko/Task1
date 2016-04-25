@@ -1,0 +1,118 @@
+.b-link-menu {
+	background: white;
+	@media screen and ( max-width: $breakpoint3 ) {
+		background: lighten($main-color-hilight, 20%);		
+	}
+}
+
+.b-link-menu__item {
+	padding-top: 10px;	
+}
+
+.b-link {	
+	font-family: $base-font;
+	height: $link-size;
+	width: $link-size;
+	line-height: $link-size;
+	font-size: $large-font-size;
+	background: $main-color; 
+	color: $main-color-light;
+	text-align: center;
+	text-transform: uppercase;		
+    text-decoration: none;
+    vertical-align: middle;      
+    position: relative;
+    display: inline-block; 
+    cursor: pointer;  
+}
+
+.b-link:before {
+	position:absolute;   
+    left: 100%;    
+    opacity: 0;
+    padding: 0 2px;
+    color: $accent-color; 
+    font-family: $icon-font;		
+	font-size: $large-font-size;	
+	display: inline-block;
+	-webkit-transition:opacity 0.35s, -webkit-transform 0.35s;
+	-webkit-transition:opacity 0.35s, transform 0.35s;
+	-webkit-transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+	transition:opacity 0.35s, -webkit-transform 0.35s;
+	transition:opacity 0.35s, transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}
+
+.b-link:hover {	
+	background: $main-color-hilight; 	   
+}
+
+/* Модификаторы */
+
+.b-link_right:before {		
+	left: 0;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);       
+}
+
+.b-link_selected:before {	    
+    opacity: 1; 
+}
+
+.b-link_shape-ellipse {		
+	border-radius: $link-size / 2;
+}
+
+.b-link_size-small {			
+	height: $channel-icon-size;
+	width: $channel-icon-size;
+	line-height: $channel-icon-size;	
+}
+
+.b-link_attention {
+	background: $attention-color;	  
+}
+
+.b-link_attention:hover {
+	background: lighten( $attention-color, 10% );
+}
+
+.b-link_ok {
+	background: $ok-color;
+}
+
+.b-link_ok:hover {
+	background: lighten( $ok-color, 10% ); 
+}
+
+.b-link_selected {			
+    background: $accent-color; 
+}
+
+.b-link_selected:hover {			
+    background: lighten( $accent-color, 10% ); 
+}
+
+.b-link_selected:hover {			
+    background: lighten( $accent-color, 10% ); 
+}
+
+.b-link_icon {
+	font-family: $icon-font;
+	font-size: 22px;
+}
+
+.b-filter-menu .b-link_icon:before {
+	font-size: $base-font-size;
+}
+
+.b-link-menu__img {	
+	padding: 3px;	
+	width: $link-size;
+	height: $link-size;
+}
+
+.b-link:hover .b-link-menu__img {
+	opacity: 0.7;
+}

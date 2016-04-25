@@ -1,0 +1,131 @@
+﻿.b-program-now {
+	position: relative;		
+	background: black;
+	color: $main-color-light;
+	text-transform: uppercase;
+	font-size: $large-font-size;
+	overflow: hidden;
+}
+
+.b-program-now:after,
+.b-program-now__timeline {
+	position: absolute;
+	bottom: 0;
+	left: 0;	
+	height: 15px;			
+	-webkit-transform: translateY(6px);
+		-ms-transform: translateY(6px);
+	        transform: translateY(6px);
+}
+
+.b-program-now:after {	
+	width: 100%;	
+	content: '';	
+	background: rgba(255,255,255, 0.2);	
+}
+
+.b-program-now__timeline {	
+	width: 60%;		
+	background: $main-color;	
+}
+
+.b-program-now__icon {
+	position: relative;
+	display: block; 
+	width: 100%;	
+	transition: opacity 0.35s;
+	opacity: 0.9;
+}
+
+.b-program-now__title,
+.b-program-now__time,
+.b-program-now__link {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.b-program-now__title,
+.b-program-now__time {	
+	padding: 5% 10%;	
+	text-align: left;
+	word-spacing: 1px;
+	font-weight: 300;		
+}
+
+.b-program-now__title:before {
+	content: $now-content;
+	display: block;	
+	margin-bottom: 3px;
+}
+
+.b-program-now__title span,
+.b-program-now__time span {
+	font-weight: 800;
+}
+
+.b-program-now__time, .b-program-now__title:before {	
+	opacity: 0;	
+}
+
+.b-program-now a {		
+	height: 100%;	
+	font-size: 0;
+}
+
+.b-program-now__title {		
+	-webkit-transform: translateY(-10px);		
+	    -ms-transform: translateY(-10px);		
+	    	transform: translateY(-10px);
+}
+
+.b-program-now__time {	
+	-webkit-transform: translateY(10px);
+		-ms-transform: translateY(10px);
+	        transform: translateY(10px);	
+}
+
+.b-program-now__icon,
+.b-program-now:after,
+.b-program-now__timeline,
+.b-program-now__title,
+.b-program-now__title:before,
+.b-program-now__time {			
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;			
+	-webkit-transition: opacity 0.35s, transform 0.35s;			
+	-webkit-transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;	
+	transition: opacity 0.35s, -webkit-transform 0.35s;			
+	transition: opacity 0.35s, transform 0.35s;			
+	transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;	
+}
+
+/* Изменение параметров при наведении мышью */
+
+.b-program-now:hover .b-program-now__icon {
+	opacity: 0.5;
+}
+
+.b-program-now:hover::after,
+.b-program-now:hover .b-program-now__timeline {	
+	-webkit-transform: translateY(0);	
+	    -ms-transform: translateY(0);	
+	        transform: translateY(0);
+}
+
+.b-program-now:hover .b-program-now__title:before,
+.b-program-now:hover .b-program-now__time {
+	opacity: 1;	
+}
+
+.b-program-now:hover .b-program-now__title {	
+	-webkit-transform: translateY(-30px);	
+	    -ms-transform: translateY(-30px);	
+	        transform: translateY(-30px);
+}
+
+.b-program-now:hover .b-program-now__time {	
+	-webkit-transform: translateY(-10px);	
+	    -ms-transform: translateY(-10px);	
+	        transform: translateY(-10px);
+}

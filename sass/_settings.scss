@@ -1,0 +1,28 @@
+﻿$now-content: 'сейчас';
+$link-size: 42px;
+$channel-icon-size: 34px;
+
+/* typography */
+$small-font-size: 12px;
+$base-font-size: 13px;
+$large-font-size: 18px;
+$xlarge-font-size: 28px;
+$base-font: Helvetica, Arial, sans-serif;
+$icon-font: "icomoon";
+
+/* colors */
+$main-color: #47a4db;
+$attention-color: #ed5757;
+$accent-color: #3cd088;
+$ok-color: #efab5c ;
+$main-color-dark: #33759d;
+$main-color-hilight: lighten( $main-color, 10% );
+$main-color-light: #fff;
+$gray-color-hilight: #96a8ab;
+$gray-color: #30404e;
+$gray-color-dark: #2a3035;
+
+/* media queries breakpoints */
+$breakpoint1: 1560px;
+$breakpoint2: 1100px;
+$breakpoint3: 560px;
